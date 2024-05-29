@@ -1,0 +1,61 @@
+.segundaparte {
+    border-radius: 20px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(-45deg, #02040a, #0e0025, #170024, #000514, #070013, #170024, #0e0025);
+    background-size: 200% 200%;
+    animation: gradientChange 10s ease infinite;
+}
+
+@keyframes gradientChange {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.text2 {
+    animation: fadeInFromLeft 1s ease-out forwards;
+    padding-right: 10rem;
+}
+.text2 h2 {
+    font-family: 'Share Tech Mono';
+    font-weight: bold;
+   margin-left: 15rem;
+    font-size: 3rem;
+}
+.text2 p {
+    font-family: 'Share Tech Mono';
+    font-weight: lighter;
+   margin-left: 15rem;
+    font-size: 1.2rem;
+}
+
+
+.segundaparte img {
+    max-width: 40%;
+    
+    opacity: 90%;
+}
+
+.lazy-image {
+    opacity: 0;
+    transform: translateX(-70%);
+    filter: blur(10px);
+    animation: fadeInFromLeft 1s ease-out forwards;
+    
+}
+
+
+ 
+    

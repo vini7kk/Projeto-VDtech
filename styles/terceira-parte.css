@@ -1,0 +1,67 @@
+.terceiraparte {
+    border-radius: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction:column;  
+    justify-content: center;
+   align-items: center;
+   font-family: 'Share Tech Mono';
+   font-size: 100%;
+}
+.terceiraparte h2{
+    font-weight: bold;
+     font-size: 3rem;
+     margin-bottom: 10rem;
+}
+.jobs{
+    background-color: rgba(7, 65, 255, 0.041);
+    border: 2px solid rgba(255, 255, 255, 0.466);
+    padding: 10px;
+    padding-inline: 1.5rem;
+    border-radius: 15px;
+}
+
+.terceiraparte p, h3 {
+    opacity: 90%;
+    
+}
+
+
+
+/*ESTILIZAÇÃO DO RODAPÉ*/
+footer  {
+    border-radius: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction:row;  
+    justify-content:space-between;
+   align-items: center;
+   font-family: 'Share Tech Mono';
+    opacity: 80%;
+    min-height: 10vh;
+}
+
+ 
+i {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+  
+}   
+.logo2 {
+    width: 15%;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+.logo2 img {
+    width: 40%;
+    margin-top:-0.5rem;
+    margin-right: -1rem;
+}
+.logo2 h1 {
+    font-family: 'Share Tech Mono';
+    font-weight: lighter;
+}

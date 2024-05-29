@@ -1,0 +1,228 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to right, #000000,black, black, #080324);
+    background-size: 200% 200%;
+    animation: gradientChange 5s ease infinite;
+    color: white;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px; 
+}
+
+
+                                                                                 /*Cabeçalho*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 3rem;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+  
+}
+
+.logo h1{ 
+    transition: transform 0.3s ease-in-out;
+    font-weight: 100;
+}
+.logo h1:hover {
+    transform: scale(1.05);
+}
+
+.logo {
+    width: 15%;
+    transition: 0.3s;
+    font-family: 'Share Tech Mono';
+    display: flex;
+    align-items: center;
+    animation: fadeInFromLeft 1s ease forwards;
+}
+
+.logo img {
+    transition: transform 0.3s ease-in-out;
+    width: 50%; 
+    height: auto;
+    margin-right: -10px; 
+    margin-top: -10px;
+}
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+li{
+    text-decoration: none;
+    font-family: poppins;
+    display: inline-block;
+    margin: 20px;
+    color: #FFF;
+    font-weight: 600;
+    transition: transform 0.5s ease;
+}
+.nav-list {
+    animation: fadeInFromLeft 1s ease forwards;
+}
+.menu-itens {
+
+    padding-right: 2rem
+}
+.menu-itens:hover{
+    transform: scale(1.3);
+
+}
+
+.login-btn {
+    text-decoration: none;
+    font-family: 'poppins';
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0e0b2b, #000000);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+    margin-top: 2rem;
+}
+.login-btn:hover {
+    transform: scale(1.1);
+}
+  
+                                                                                       /*conteúdo*/
+
+section {
+    min-height: 90vh;
+}
+
+.primeiraparte {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 1rem;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    margin-top: 10rem;
+    
+}
+
+.text {
+   padding-top: 5rem;
+   font-family: 'Share Tech Mono';
+   font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/*Efeitos*/
+
+h1 span {
+    color: #aa4ad6;
+    position: relative;
+}
+h1 span::before {
+    content: "";
+    height: 30px;
+    width: 2px;
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    background: #100c31;
+    transform: translateY(-45%);
+    animation: blink 0.7s infinite;
+}
+h1 span.stop-blinking::before {
+    animation: none;
+}
+@keyframes blink {
+    50% { opacity: 0 }
+}
+
+.img1 {
+    width: 40%;
+   height: 40%;
+   position: relative;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    
+}
+
+
+/*Animação*/
+.text {
+    opacity: 0;
+    animation: fadeInFromLeft 1s ease forwards;
+}
+@keyframes fadeInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-70%);
+        filter: blur(10px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        filter: blur(0); 
+    }
+}
+
+.img1 {
+    animation: fadeInFromLeft 1s ease forwards;
+}
+
+
+                                    /*Botão */
+
+button {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: 'poppins';
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0e0b2b, #000000);
+    animation: gradientChange 10s ease infinite;
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+    margin-top: 2rem;
+   
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+button svg {
+  margin-right: 3px;
+  transform: rotate(30deg);
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+button span {
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+button:hover svg {
+  transform: translateX(5px) rotate(90deg);
+}
+
+button:hover span {
+    transform: translateX(7px);
+}
+
+.btn-text {
+    animation: fadeInFromLeft 1s ease forwards;
+}
