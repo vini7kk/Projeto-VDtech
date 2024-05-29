@@ -171,7 +171,7 @@ li.login-btn  {
     top: 0;
     left: 0;
     width: 90vw;
-    height: 150%;
+    height: 120%;
     background: linear-gradient(to right, #000000,black, black, #080324);
     background-size: 200% 200%;
     animation: gradientChange 5s ease infinite;
